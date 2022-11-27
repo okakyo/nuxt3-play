@@ -4,12 +4,11 @@ import TheFooter from '../components/general/TheFooter.vue';
 </script>
 
 <template>
-  <div class="bg-gray-100">
+  <div class="bg-gray-100 h-screen">
     <TheHeader/>
-      <div class="container mx-auto my-5 px-4 py-6 bg-gray-50 min-h-[calc(100vh-420px)] rounded flex">
-      <GeneralTheSidebar/>
+    <div class="container mx-auto max-w-4xl px-4 py-6">
       <slot />
+      <TheFooter/>
     </div>
-    <TheFooter/>
   </div>
 </template>
