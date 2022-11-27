@@ -2,7 +2,7 @@
   "name": "ui",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "start-storybook -p 6006",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
     "test:unit": "vitest --environment jsdom --root src/",
@@ -11,10 +11,7 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "story": "histoire dev",
-    "story:build": "histoire build",
-    "story:preview": "histoire preview",
-    "storybook": "start-storybook -p 6006",
+    "vite:dev": "vite",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
@@ -43,9 +40,6 @@
     "babel-loader": "^8.3.0",
     "cypress": "^10.10.0",
     "eslint": "^8.22.0",
-    "eslint-plugin-cypress": "^2.12.1",
-    "eslint-plugin-storybook": "^0.6.7",
-    "eslint-plugin-vue": "^9.3.0",
     "jsdom": "^20.0.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.19",
@@ -56,6 +50,7 @@
     "vite": "^3.1.8",
     "vitest": "^0.24.3",
     "vue-loader": "^16.8.3",
-    "vue-tsc": "^1.0.8"
+    "vue-tsc": "^1.0.8",
+    "eslint-config-custom": "workspace:*"
   }
 }
