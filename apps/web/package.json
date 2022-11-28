@@ -5,14 +5,15 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint",
+    "lintfix": "eslint --fix"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.1.3",
     "@tailwindcss/typography": "^0.5.8",
     "nuxt": "3.0.0",
-    "eslint-config-custom": "workspace:*",
-    "ui": "workspace:*"
+    "@common/ui": "workspace:*"
   },
   "dependencies": {
     "@nuxt/content": "^2.2.2"
